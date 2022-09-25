@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">btvn</string>
+    <string name="title_order_details">Order details</string>
+    <string name="title_spacy_fresh_crab">Spacy fresh crab</string>
+    <string name="title_waroenk_kita">Waroenk kita</string>
+    <string name="title_35">$ 35</string>
+    <string name="title_1">1</string>
+    <string name="title_sub_total">Sub-Total</string>
+    <string name="title_delivery_charge">Delivery Charge</string>
+    <string name="title_discount">Discount</string>
+    <string name="title_total">Total</string>
+    <string name="_120">120 $</string>
+    <string name="_10">10 $</string>
+    <string name="_20">20 $</string>
+    <string name="_150">150$</string>
+    <string name="title_place_my_order">Place My Order</string>
 </resources>
