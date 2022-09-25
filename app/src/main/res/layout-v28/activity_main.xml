@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,7 +19,8 @@
             android:background="@drawable/bg_button_back"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/button_back" />
+            app:srcCompat="@drawable/button_back"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/textView"
@@ -29,6 +30,7 @@
             android:layout_marginTop="@dimen/dp_20"
             android:text="@string/title_order_details"
             android:textColor="@color/black_rich"
+            android:textFontWeight="400"
             android:textSize="@dimen/sp_25"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/cardView"
@@ -39,9 +41,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:contentPadding="@dimen/dp_10"
-            android:layout_marginStart="@dimen/sp_14"
+            android:layout_marginStart="@dimen/dp_14"
             android:layout_marginTop="@dimen/dp_20"
-            android:layout_marginEnd="@dimen/sp_14"
+            android:layout_marginEnd="@dimen/dp_14"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="@dimen/dp_22"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +65,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/title_spacy_fresh_crab"
                 android:textColor="#09051C"
-                android:textSize="15sp" />
+                android:textSize="@dimen/sp_15" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,7 +74,7 @@
                 android:layout_marginTop="@dimen/dp_42"
                 android:text="@string/title_waroenk_kita"
                 android:textColor="#3B3B3B"
-                android:textSize="@dimen/sp_14" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,8 +84,7 @@
                 android:lineHeight="@dimen/sp_25"
                 android:text="@string/title_35"
                 android:textColor="#53E88B"
-                android:textSize="@dimen/dp_20"
-                tools:ignore="SpUsage" />
+                android:textSize="19sp" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -97,12 +98,12 @@
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_286"
+                android:layout_marginLeft="@dimen/dp_286"
                 android:layout_marginTop="@dimen/dp_48"
                 android:lineHeight="@dimen/sp_24"
                 android:text="@string/title_1"
-                android:textColor="#181818"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -115,13 +116,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
-            android:layout_width="347dp"
-            android:layout_height="103dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentPadding="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_14"
             app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="22dp"
+            app:cardCornerRadius="@dimen/dp_22"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -129,57 +131,57 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="21dp"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_22"
                 app:srcCompat="@drawable/menu_photo2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.45dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_18"
                 android:fontFamily="sans-serif-medium"
-                android:text="Spacy fresh crab"
+                android:text="@string/title_spacy_fresh_crab"
                 android:textColor="#09051C"
-                android:textSize="15sp" />
+                android:textSize="@dimen/sp_15" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.45dp"
-                android:layout_marginTop="42dp"
-                android:text="Waroenk kita"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_42"
+                android:text="@string/title_waroenk_kita"
                 android:textColor="#3B3B3B"
                 android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.89dp"
-                android:layout_marginTop="64dp"
-                android:lineHeight="25sp"
-                android:text="$ 35"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_64"
+                android:lineHeight="@dimen/sp_25"
+                android:text="@string/title_35"
                 android:textColor="#53E88B"
                 android:textSize="19sp" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="244dp"
-                android:layout_marginTop="46dp"
+                android:layout_marginStart="@dimen/dp_244"
+                android:layout_marginTop="@dimen/dp_46"
                 android:background="@drawable/bg_minus_button"
-                android:src="@drawable/ic_minus" />
+                android:src="@drawable/ic_minus"/>
 
             <TextView
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="286dp"
-                android:layout_marginTop="48dp"
-                android:lineHeight="24sp"
-                android:text="1"
-                android:textColor="#181818"
-                android:textSize="16sp" />
+                android:layout_marginLeft="@dimen/dp_286"
+                android:layout_marginTop="@dimen/dp_48"
+                android:lineHeight="@dimen/sp_24"
+                android:text="@string/title_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -192,13 +194,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
-            android:layout_width="347dp"
-            android:layout_height="103dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentPadding="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_14"
             app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="22dp"
+            app:cardCornerRadius="@dimen/dp_22"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2">
@@ -206,74 +209,74 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="21dp"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_22"
                 app:srcCompat="@drawable/menu_photo3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.45dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_18"
                 android:fontFamily="sans-serif-medium"
-                android:text="Spacy fresh crab"
+                android:text="@string/title_spacy_fresh_crab"
                 android:textColor="#09051C"
-                android:textSize="15sp" />
+                android:textSize="@dimen/sp_15" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.45dp"
-                android:layout_marginTop="42dp"
-                android:text="Waroenk kita"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_42"
+                android:text="@string/title_waroenk_kita"
                 android:textColor="#3B3B3B"
                 android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="93.89dp"
-                android:layout_marginTop="64dp"
-                android:lineHeight="25sp"
-                android:text="$ 35"
+                android:layout_marginStart="@dimen/dp_94"
+                android:layout_marginTop="@dimen/dp_64"
+                android:lineHeight="@dimen/sp_25"
+                android:text="@string/title_35"
                 android:textColor="#53E88B"
                 android:textSize="19sp" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="244dp"
-                android:layout_marginTop="46dp"
+                android:layout_marginStart="@dimen/dp_244"
+                android:layout_marginTop="@dimen/dp_46"
                 android:background="@drawable/bg_minus_button"
-                android:src="@drawable/ic_minus" />
+                android:src="@drawable/ic_minus"/>
 
             <TextView
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="286dp"
-                android:layout_marginTop="48dp"
-                android:lineHeight="24sp"
-                android:text="1"
-                android:textColor="#181818"
-                android:textSize="16sp" />
+                android:layout_marginLeft="@dimen/dp_286"
+                android:layout_marginTop="@dimen/dp_48"
+                android:lineHeight="@dimen/sp_24"
+                android:text="@string/title_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="310dp"
-                android:layout_marginTop="46dp"
+                android:layout_marginLeft="@dimen/dp_310"
+                android:layout_marginTop="@dimen/dp_46"
                 android:background="@drawable/bg_plus_button"
                 android:src="@drawable/ic_plus" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="346dp"
-            android:layout_height="206dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="84dp"
-            android:layout_marginEnd="14dp"
-            app:cardCornerRadius="22dp"
+            android:layout_width="@dimen/dp_346"
+            android:layout_height="@dimen/dp_206"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_84"
+            android:layout_marginEnd="@dimen/dp_14"
+            app:cardCornerRadius="@dimen/dp_22"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView3">
@@ -295,77 +298,78 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Sub-Total"
+                    android:layout_marginStart="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/title_sub_total"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:text="@string/title_delivery_charge"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_62"
+                    android:text="@string/title_discount"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_98"
+                    android:text="@string/title_total"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/dp_18"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    android:text="@string/_120"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_42"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    android:text="@string/_10"
+                    android:textColor="#FEFEFF"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_62"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    android:text="@string/_20"
                     android:textColor="#FEFEFF"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginTop="41dp"
-                    android:text="Delivery Charge"
-                    android:textColor="#FEFEFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginTop="62dp"
-                    android:text="Discount"
-                    android:textColor="#FEFEFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginTop="97dp"
-                    android:text="Total"
-                    android:textColor="#FEFEFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="21dp"
-                    android:layout_marginRight="23dp"
-                    android:text="120 $"
-                    android:textColor="#FEFEFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="41dp"
-                    android:layout_marginRight="23dp"
-                    android:text="10 $"
-                    android:textColor="#FEFEFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="62dp"
-                    android:layout_marginRight="23dp"
-                    android:text="20 $"
-                    android:textColor="#FEFEFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="97dp"
-                    android:layout_marginRight="23dp"
-                    android:text="150$"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_98"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    android:text="@string/_150"
                     android:textColor="#FEFEFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -373,11 +377,11 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="137dp"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_138"
                     android:background="@drawable/ic_place_order_button"
                     android:gravity="center"
-                    android:text="Place My Order"
+                    android:text="@string/title_place_my_order"
                     android:textColor="#53E88B"
                     android:textSize="14sp"
                     android:textStyle="bold" />
